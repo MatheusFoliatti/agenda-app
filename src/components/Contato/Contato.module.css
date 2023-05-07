@@ -4,9 +4,8 @@
     width: 40.6rem;
     height: fit-content;
     justify-content: center;
-    background: var(--color-bg-agenda);
+    background: #1A1924;
     border-radius: 5px;
-    border: solid 1px white;
   }
   
   .list .p1 {
@@ -47,3 +46,22 @@
     border-radius: 100px;
     border: 2.5px solid var(--color-bg-dark);
   }
+
+  .list .h1 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #633BBC;
+    width: 4.5rem;
+    border-radius: 8px 8px 8px 8px;
+    height: fit-content;
+    margin-top: 20px;
+    text-align: center;
+    }
+  
+    
+  
+    

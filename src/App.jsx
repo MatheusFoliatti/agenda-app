@@ -2,6 +2,7 @@ import style from "./App.module.css";
 
 import { CardPerson } from "./components/CardPerson/CardPerson";
 import { Contato } from "./components/Contato/Contato";
+import { Cabecalho } from "./components/Cabeçalho/Cabecalho";
 
 export function App() {
 	const listStack = [
@@ -22,19 +23,26 @@ export function App() {
 				office="Assistende de TI"
 				stacks={listStack}
 			/>
-			<div className={style.contatos}>
-				<Contato
-					name="Deide Costa"
-					number="(15) 6415-9365"
-					email="deide.costa@example.com"
-					icon="https://randomuser.me/api/portraits/med/women/95.jpg"
-				/>
-				<Contato
-					name="Jonas Brother"
-					number="(15) 6415-9365"
-					email="deide.costa@example.com"
-					icon="https://randomuser.me/api/portraits/med/men/95.jpg"
-				/>
+			<div>
+				<div className={style.cabecalho}>
+					<Cabecalho />
+				</div>
+				<div className={style.contatos}>
+					<Contato
+						name="Deide Costa"
+						number="(15) 6415-9365"
+						email="deide.costa@example.com"
+						icon="https://randomuser.me/api/portraits/med/women/95.jpg"
+						filter="D"
+					/>
+					<Contato
+						name="Jonas Brother"
+						number="(15) 6415-9365"
+						email="deide.costa@example.com"
+						icon="https://randomuser.me/api/portraits/med/men/95.jpg"
+						filter="J"
+					/>
+				</div>{" "}
 			</div>
 		</div>
 	);

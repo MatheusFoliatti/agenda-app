@@ -1,13 +1,12 @@
 import React from "react";
 
 import style from "./Contato.module.css";
-import { Filter } from "../Filter/Filter";
 
-export function Contato({ name, number, email, icon }) {
+export function Contato({ name, number, email, icon, filter }) {
 	return (
 		<>
 			<div className={style.list}>
-				<Filter filter="D" />
+				<p className={style.h1}>{filter}</p>
 				<div className={style.card}>
 					<img className={style.icon} src={icon} alt="icon" />
 				</div>

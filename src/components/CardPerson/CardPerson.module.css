@@ -12,7 +12,6 @@
 
   background: var(--color-bg-dark);
 
-  outline: solid 0.75px var(--green);
 }
 
 .card > img {
