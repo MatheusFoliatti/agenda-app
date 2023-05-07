@@ -1,0 +1,49 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 40.6rem;
+    height: fit-content;
+    justify-content: center;
+    background: var(--color-bg-agenda);
+    border-radius: 5px;
+    border: solid 1px white;
+  }
+  
+  .list .p1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--gray-light);
+  }
+  
+  .list .p2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 160%;
+    color: var(--gray-dark);
+  }
+
+  .contact{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .card > img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-top: 20px;
+  }
+  
+  .card .icon {
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2.5px solid var(--color-bg-dark);
+  }
