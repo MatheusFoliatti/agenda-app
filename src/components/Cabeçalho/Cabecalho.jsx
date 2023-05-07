@@ -4,6 +4,7 @@ import style from "./Cabecalho.module.css";
 import addIcon from "../../assets/add.svg";
 import editIcon from "../../assets/edit.svg";
 import deleteIcon from "../../assets/delete.svg";
+import searchIcon from "../../assets/search.svg";
 
 export function Cabecalho({}) {
 	return (
@@ -22,11 +23,13 @@ export function Cabecalho({}) {
 					</button>
 				</div>
 			</div>
-			<div className={style.input}>
+			<div className={style.inputBar}>
+				<img className={style.SearchIcon} src={searchIcon} alt="Search Icon" />
 				<input
+					className={style.SearchBar}
 					type="text"
-					className={style.inputText}
-					placeholder="Busque por nome ou dado de contato"
+					name="Search"
+					placeholder="Busque por nome ou por dados de contato..."
 				/>
 			</div>
 		</>

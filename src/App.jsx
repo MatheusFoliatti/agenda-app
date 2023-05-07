@@ -6,12 +6,16 @@ import { Cabecalho } from "./components/Cabeçalho/Cabecalho";
 
 export function App() {
 	const listStack = [
-		{ Tec: "JavaScript" },
-		{ Tec: "HTML" },
-		{ Tec: "CSS" },
-		{ Tec: "Typescript" },
-		{ Tec: "React" },
-		{ Tec: "HUAWEII" },
+		{ Tec: "JavaScript", color: "red" },
+		{ Tec: "HTML", color: "yellow" },
+		{ Tec: "CSS", color: "pink" },
+		{ Tec: "Typescript", color: "purple" },
+		{ Tec: "React", color: "cyan" },
+		{ Tec: "HUAWEII", color: "blue" },
+	];
+	const listFilter = [
+		{ Tec: "D", color: "red" },
+		{ Tec: "J", color: "blue" },
 	];
 
 	return (
@@ -33,16 +37,16 @@ export function App() {
 						number="(15) 6415-9365"
 						email="deide.costa@example.com"
 						icon="https://randomuser.me/api/portraits/med/women/95.jpg"
-						filter="D"
+						filters={listFilter}
 					/>
 					<Contato
 						name="Jonas Brother"
 						number="(15) 6415-9365"
 						email="deide.costa@example.com"
 						icon="https://randomuser.me/api/portraits/med/men/95.jpg"
-						filter="J"
+						filters={listFilter}
 					/>
-				</div>{" "}
+				</div>
 			</div>
 		</div>
 	);

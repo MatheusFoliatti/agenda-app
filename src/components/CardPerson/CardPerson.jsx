@@ -19,7 +19,7 @@ export function CardPerson({ cover, avatar, name, office, stacks }) {
 				<p className={style.p2}>{office}</p>
 				<div className={style.stack}>
 					{stacks.map((stack) => {
-						return <Stack key={stack} name={stack.Tec} cor={stack.color} />;
+						return <Stack key={stack} name={stack.Tec} color={stack.color} />;
 					})}
 				</div>
 			</div>
