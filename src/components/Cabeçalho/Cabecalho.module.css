@@ -1,6 +1,6 @@
 .header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 40.6rem;
     height: fit-content;
@@ -14,17 +14,24 @@
     margin-top: 17px;
 }
 
+.topRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .inputBar {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 16px 24px;
     gap: 10px;
+    margin-left: 15px;
   
-    width: 40.6rem;
+    width: 350px;
     height: 40px;
   
-    background: #16151E;
+    background: #24243D;
     border-radius: 5px;
   
     flex: none;
@@ -33,10 +40,10 @@
     flex-grow: 0;
   }
   
-.inputBar > input {
+  .inputBar>input {
     border: none;
     background-color: transparent;
-    
+  
     outline: none;
     width: 276px;
     height: 14px;
@@ -54,7 +61,7 @@
     flex-grow: 1;
   }
   
-.inputBar > input::placeholder {
+  .inputBar>input::placeholder {
     color: #E1E1E6;
   }
 

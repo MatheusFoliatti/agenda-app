@@ -13,10 +13,6 @@ export function App() {
 		{ Tec: "React", color: "cyan" },
 		{ Tec: "HUAWEII", color: "blue" },
 	];
-	const listFilter = [
-		{ Tec: "D", color: "red" },
-		{ Tec: "J", color: "blue" },
-	];
 
 	return (
 		<div className={style.container}>
@@ -37,14 +33,14 @@ export function App() {
 						number="(15) 6415-9365"
 						email="deide.costa@example.com"
 						icon="https://randomuser.me/api/portraits/med/women/95.jpg"
-						filters={listFilter}
+						filters="D"
 					/>
 					<Contato
 						name="Jonas Brother"
 						number="(15) 6415-9365"
 						email="deide.costa@example.com"
 						icon="https://randomuser.me/api/portraits/med/men/95.jpg"
-						filters={listFilter}
+						filters="J"
 					/>
 				</div>
 			</div>
