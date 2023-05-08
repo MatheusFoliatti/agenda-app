@@ -10,27 +10,35 @@ export function Cabecalho({}) {
 	return (
 		<>
 			<div className={style.header}>
-				<p className={style.h1}>Meus Contatos</p>
-				<div className={style.buttons}>
-					<button className={style.buttonAdd}>
-						<img src={addIcon} alt="adicionar" />
-					</button>
-					<button className={style.buttonEdit}>
-						<img src={editIcon} alt="editar" />
-					</button>
-					<button className={style.buttonDelete}>
-						<img src={deleteIcon} alt="deletar" />
-					</button>
+				<div className={style.topRow}>
+					<p className={style.h1}>Meus Contatos</p>
+					<div className={style.buttons}>
+						<button className={style.buttonAdd}>
+							<img src={addIcon} alt="adicionar" />
+						</button>
+						<button className={style.buttonEdit}>
+							<img src={editIcon} alt="editar" />
+						</button>
+						<button className={style.buttonDelete}>
+							<img src={deleteIcon} alt="deletar" />
+						</button>
+					</div>
 				</div>
-			</div>
-			<div className={style.inputBar}>
-				<img className={style.SearchIcon} src={searchIcon} alt="Search Icon" />
-				<input
-					className={style.SearchBar}
-					type="text"
-					name="Search"
-					placeholder="Busque por nome ou por dados de contato..."
-				/>
+				<div className={style.SearchBox}>
+					<div className={style.inputBar}>
+						<img
+							className={style.SearchIcon}
+							src={searchIcon}
+							alt="Search Icon"
+						/>
+						<input
+							className={style.SearchBar}
+							type="text"
+							name="Search"
+							placeholder="Busque por nome ou por dados de contato..."
+						/>
+					</div>
+				</div>
 			</div>
 		</>
 	);
