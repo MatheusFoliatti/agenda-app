@@ -27,21 +27,42 @@ export function App() {
 				<div className={style.cabecalho}>
 					<Cabecalho />
 				</div>
-				<div className={style.contatos}>
-					<Contato
-						name="Deide Costa"
-						number="(15) 6415-9365"
-						email="deide.costa@example.com"
-						icon="https://randomuser.me/api/portraits/med/women/95.jpg"
-						filters="D"
-					/>
-					<Contato
-						name="Jonas Brother"
-						number="(15) 6415-9365"
-						email="deide.costa@example.com"
-						icon="https://randomuser.me/api/portraits/med/men/95.jpg"
-						filters="J"
-					/>
+				<div className={style.ListaContato}>
+					<div className={style.contatos}>
+						<h1 className={style.letra} style={{ backgroundColor: "#07847E" }}>
+							D
+						</h1>
+						<Contato
+							name="Deide Costa"
+							number="(15) 6415-9365"
+							email="deide.costa@example.com"
+							icon="https://randomuser.me/api/portraits/med/women/95.jpg"
+						/>
+						<h1 className={style.letra} style={{ backgroundColor: "#633BBC" }}>
+							J
+						</h1>
+						<Contato
+							name="Jonas Brother"
+							number="(95) 5598-8104"
+							email="jonas.brother@example.com"
+							icon="https://randomuser.me/api/portraits/med/men/95.jpg"
+						/>
+						<Contato
+							name="Jorel Brother"
+							number="(37) 4074-7201"
+							email="jorel.brother@example.com"
+							icon="https://randomuser.me/api/portraits/med/men/69.jpg"
+						/>
+						<h1 className={style.letra} style={{ backgroundColor: "#9A00B3" }}>
+							A
+						</h1>
+						<Contato
+							name="Abraão da Silva"
+							number="(72) 9884-2555"
+							email="abraao.silva@example.com"
+							icon="https://randomuser.me/api/portraits/med/men/5.jpg"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>

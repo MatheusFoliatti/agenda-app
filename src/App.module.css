@@ -5,3 +5,27 @@
 	height: 100vh;
 	padding: 15px;
 }
+
+.ListaContato{
+	display: flex;
+    flex-direction: row;
+    width: 40.6rem;
+    height: fit-content;
+    justify-content: center;
+    background: #1A1924;
+    border-radius: 5px;
+}
+
+.letra{	
+	width: 4.5rem;
+	height: fit-content;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 20px;
+	position: absolute;
+}
