@@ -29,6 +29,15 @@ export function App() {
 				</div>
 				<div className={style.ListaContato}>
 					<div className={style.contatos}>
+						<h1 className={style.letra} style={{ backgroundColor: "#9A00B3" }}>
+							A
+						</h1>
+						<Contato
+							name="Abraão da Silva"
+							number="(72) 9884-2555"
+							email="abraao.silva@example.com"
+							icon="https://randomuser.me/api/portraits/med/men/5.jpg"
+						/>
 						<h1 className={style.letra} style={{ backgroundColor: "#07847E" }}>
 							D
 						</h1>
@@ -52,15 +61,6 @@ export function App() {
 							number="(37) 4074-7201"
 							email="jorel.brother@example.com"
 							icon="https://randomuser.me/api/portraits/med/men/69.jpg"
-						/>
-						<h1 className={style.letra} style={{ backgroundColor: "#9A00B3" }}>
-							A
-						</h1>
-						<Contato
-							name="Abraão da Silva"
-							number="(72) 9884-2555"
-							email="abraao.silva@example.com"
-							icon="https://randomuser.me/api/portraits/med/men/5.jpg"
 						/>
 					</div>
 				</div>
